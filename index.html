@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janki's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Janki Padiya</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Janki Padiya</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>       
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic2.png" alt="Janki Padiya Profile Picture" class="profile-pic">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Janki Padiya</h1>
+            <p class="section__text__p2">Developer/Security Analyst</Developer></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1YwErr-9GPiuMavBITXxU6tT0EXBpfJhr/view?usp=sharing')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/janki-padiya/'">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/janki2709'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience Icon" 
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ years <br/> Cyber Security</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education Icon" 
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>M.S. - Software Engineering<br/>B.E. - Computer Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Experienced Cyber Security Professional with expertize in penetration testing of Websites, Application, APIs, and Networks!
+                        <br> Proficient Vulnerability validation, Tracking, Remediation and effective Resolution of customer tickets.
+                        <br> Well versed with Full Stack Development. Feel free to explore Project section to view my Development projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container-t">
+                        <h3 class="skills-sub-title" style="text-align: left; width:49%; display: inline-block;">Tata Consultancy Services Limited</h3>
+                        <p style="text-align: right; width:50%; display: inline-block;">Gandhinagar, India</p>
+                    <div class="same-line">
+                        <h1 style="text-align: left; width:49%; display: inline-block;">Assistant System Engineer</h1>
+                        <p style="text-align: right; width:50%; display: inline-block;">May 2021 - August 2022</p>                    
+                    </div>
+                    <div id="experience-list">
+                        <ul>
+                            <br>
+                            <li>Conducted infrastructure assessment, regular penetration tests and vulnerability scans on 35+ Websites, 15+ Applications, and 20+ APIs. Collaborated with cross-functional teams to remediate potential security weaknesses.</li>
+                            <br>
+                            <li>Trained and mentored a team of 8 junior associates on web application security, vulnerability validation, tracking, remediation and resolution of customer tickets; increased team efficiency by 18% and reduced resolution time by 23%.</li>
+                            <br>
+                            <li>Wrote a comprehensive report with detailed findings and recommendations for remediation. Wrote training articles and conducted phishing campaigns which reduced security incidents by 8%</li>
+                            <br>
+                            <li>Engaged in continuous learning and stayed updated on industry best practices in cybersecurity through online courses, workshops, and forums, demonstrating a commitment to personal and professional growth in the field.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+
+        <div class="skills-details-container">
+            <div class="about-containers">
+
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Cyber Security</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Nmap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>BurpSuite</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Metasploit</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Core Impact</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Wireshark</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Aircrack-ng</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Hydra</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Nikto</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Hashcat</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>OWASP Top 10</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>IDS/IPS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>TCP/IP stack</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>NodeJS & Express</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>C & C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Databases</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>NoSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>AWS-RDS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>DynamoDB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Other Tools/Softwares</h2>
+                    <div class="article-container">
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Amazon Web Services(AWS)</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>VS Code</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills checkmark Icon" class="icon">
+                            <div>
+                                <h3>REST API</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Ashok Motor Rewinding</h2>
+                    <p>Business Landing Page</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://janki2709.github.io/AshokMotorRewinding/'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Workomania</h2>
+                    <p>Hiring Platform for gray color workers</p>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Weather</h2>
+                    <p>Provides real time Weather Information</p>
+                    <div class="btn-container">   
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://janki2709.github.io/weatherApp/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-details-container">
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">ToDo List - React</h2>
+                    <p>Craft, organize, and track Tasks</p>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-5.png" alt="Project 5" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">NodeCRUD</h2>
+                    <p>REST API</p>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-6.png" alt="Project 6" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Calculator</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://janki2709.github.io/calculator/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:jankipadiya25@gmail.com">Email Me</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/janki-padiya/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Janki Padiya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
